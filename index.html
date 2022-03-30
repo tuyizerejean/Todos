@@ -29,10 +29,23 @@
         </form>
       </div>
        <!-- Retrieving all the todos created -->
-       <div class="formDiv shadow-md">
-        <h1 class="text-2xl font-bold mt-8 mb-5 p-5">List of all Todos</h1>
-        <div class="mb-5">
-       <input type="checkbox">Working on CRUD operation
+       <div class="formDiv shadow-md" id="todoView">
+        <h2 class="text-2xl font-bold mt-8 p-5">List of all Todos</h2>
+        <div class="pb-3 pl-5" id="todoView1">
+        <ul id="todoList">
+          <li id="getTodo"> <div class="bg-green-500" id="divTodo">
+              <input type="checkbox"> 
+              <label>Create todo Form</label>
+            <p>03/14/2022</p> 
+          </div>
+        </li> 
+          <!-- <li> <input type="checkbox"> <label>Able to submit the form</label></li> 
+          <li>Date</li>
+          <li> <input type="checkbox"> <label>Retrieve the data from todos form</label></li> 
+          <li>Date</li> 
+          <li> <input type="checkbox"> <label>Retrieve the data from todos form</label></li> 
+          <li>Date</li> -->
+        </ul>
         </div>
       </div>
       <script src="/todo.js"></script>
