@@ -4,3 +4,10 @@
    margin: 50px 400px;
 
 }
+.changeColor{
+    background-color: #3B61A0;
+}
+.selesai {
+    text-decoration: line-through;
+    color: blue;
+  }

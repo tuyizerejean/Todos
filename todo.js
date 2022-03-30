@@ -15,7 +15,7 @@ function createTodos() {
     const listTodo=document.createElement("ul")
     divTodo.appendChild(listTodo)
     const doneTodo=document.createElement("div")
-    doneTodo.setAttribute("class","bg-green-500")
+    doneTodo.setAttribute("class","changeColor")
     divTodo.appendChild(doneTodo)
     const tickDoneTodo=document.createElement("input")
     tickDoneTodo.setAttribute("type","checkbox")
