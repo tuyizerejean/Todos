@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/datepicker.js"></script>
+</head>
+<body>
+     <!-- Fill the form to create todos -->
+    <div class="formDiv shadow-md"id="formDiv">
+        <h1 class="text-2xl font-bold mt-8 mb-5 p-5">Welcome to Todos App</h1>
+        <form class="rounded px-8 pt-6 pb-8 m-8 ">
+          <div class="mb-5">
+           <input class="shadow appearance-none border rounded focus:outline-none py-2 px-3 text-gray-700" id="name" type="text" placeholder="Enter todo name">
+          </div>
+           <div class="mb-5">
+            <input datepicker class="shadow appearance-none border rounded focus:outline-none py-2 px-3 text-gray-700" id="todDate"type="text" placeholder="Select date">
+          </div>
+          <div class="mb-5">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8  
+             rounded focus:outline-none " id="button" type="submit">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+       <!-- Retrieving all the todos created -->
+       <div class="formDiv shadow-md">
+        <h1 class="text-2xl font-bold mt-8 mb-5 p-5">List of all Todos</h1>
+        <div class="mb-5">
+       <input type="checkbox">Working on CRUD operation
+        </div>
+      </div>
+      <script src="/todo.js"></script>
+</body>
+</html>
