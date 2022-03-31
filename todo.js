@@ -1,31 +1,44 @@
-
-function createTodos() {
     const todoForm=document.getElementById("formDiv")
     todoForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
     const todoNme=document.getElementById("name").value
     const todoDate=document.getElementById("todDate").value
+
     event.target.elements.name.value = "";
-    event.target.elements.todDate.value = "";  
+    event.target.elements.todDate.value = ""; 
     const viewTodo=document.getElementById("todoView")
     const divTodo=document.createElement("div")
     divTodo.setAttribute("class","formDiv")
-    divTodo.setAttribute("class","pb-3 pl-5")
-    viewTodo.appendChild(divTodo)
     const listTodo=document.createElement("ul")
-    divTodo.appendChild(listTodo)
+    divTodo.setAttribute("class","incompleted-tasks")
+   const list=document.createElement("li")
     const doneTodo=document.createElement("div")
-    doneTodo.setAttribute("class","changeColor")
-    divTodo.appendChild(doneTodo)
+    doneTodo.setAttribute('class','bg-blue-500 p-3')
     const tickDoneTodo=document.createElement("input")
     tickDoneTodo.setAttribute("type","checkbox")
-    divTodo.appendChild(tickDoneTodo)
     const nameTodo=document.createElement("label")
     nameTodo.innerHTML=todoNme
-    divTodo.appendChild(nameTodo)
     const dateTodos=document.createElement("p")
-    dateTodos.innerHTML=todoDate
-    divTodo.appendChild(dateTodos)
+    dateTodos.innerHTML=`<i>${todoDate}</i>`
+    doneTodo.appendChild(tickDoneTodo)
+    doneTodo.appendChild(nameTodo)
+    list.appendChild(dateTodos)
+    list.appendChild(doneTodo)
+    listTodo.appendChild(list)
+    divTodo.appendChild(listTodo)
+    viewTodo.appendChild(divTodo)
     });
-}
-createTodos()
+
+const checkbox=document.getElementById("cheked")
+checkbox.addEventListener('change',e=>{
+    if(e.target.checked)
+    {
+     console.log("Clicked")  
+     document.querySelector("#done").style.display = "block" 
+    }
+    else{
+        document.querySelector("#done").style.display = "none"
+    }
+})
+
