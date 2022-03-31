@@ -14,11 +14,13 @@
     <div class="formDiv shadow-md"id="formDiv">
         <h1 class="text-2xl font-bold mt-8 mb-5 p-5">Welcome to Todos App</h1>
         <form class="rounded px-8 pt-6 pb-8 m-8 ">
+          <label  id="validatError"style="color: red;display: none;"> 
+           todo name or todo date is empty</label>
           <div class="mb-5">
            <input class="shadow appearance-none border rounded focus:outline-none py-2 px-3 text-gray-700" id="name" type="text" placeholder="Enter todo name">
           </div>
            <div class="mb-5">
-            <input datepicker class="shadow appearance-none border rounded focus:outline-none py-2 px-3 text-gray-700" id="todDate"type="text" placeholder="Select date">
+            <input datepicker class="shadow appearance-none border rounded focus:outline-none py-2 px-3 text-gray-700" id="todDate"type="text" placeholder="Choose todo date">
           </div>
           <div class="mb-5">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8  
@@ -34,8 +36,6 @@
         <div class="pb-3 pl-5" id="todoView1">
         <ul id="todoList"class="incompleted-tasks" id="setStrick">
           <li id="getTodo"> <div class="changeColor">
-          <label  id="done"style="background-color: green;display: none;"> 
-          Done</label>
           <input type="checkbox" name="done" id="cheked">
           <label>Create todo Form</label>
           <p>03/14/2022</p> 
