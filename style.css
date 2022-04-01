@@ -1,0 +1,14 @@
+.formDiv{
+    height: auto;
+    width: 500px;
+   margin: 50px 400px;
+
+}
+.changeColor{
+    background-color: #3B61A0;
+}
+.completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
